@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="none">
+    <listeners>
+      <listener class-name="com.pearson.library.TestngListener" />
+	<listener class-name="com.pearson.library.MyNXGTestListner"/>
+  </listeners> 
+  <test name="Test">
+      <parameter name="device" value="Moto E3 Power"></parameter>
+    <classes>
+      <class name="com.pearson.testscripts.PearsonTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="none">
+  <parameter name="device" value="Moto E3 Power"/>
+  <listeners>
+    <listener class-name="com.pearson.library.TestngListener"/>
+    <listener class-name="com.pearson.library.MyNXGTestListner"/>
+  </listeners>
+  <test name="Test(failed)" parallel="none">
+    <parameter name="device" value="Moto E3 Power"/>
+    <classes>
+      <class name="com.pearson.testscripts.PearsonTest">
+        <methods>
+          <include name="init"/>
+          <include name="setUp"/>
+          <include name="testIntegerActivity" invocation-numbers="0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.pearson.testscripts.PearsonTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
