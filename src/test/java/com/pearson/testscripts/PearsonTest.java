@@ -25,7 +25,7 @@ public class PearsonTest extends BaseLib{
 		init();
 		elementStatus(loginPage.getEleVersionTxt(), "Version", "displayed");
 		try {
-		  for(int i=1;i<=5;i++){
+		  for(int i=1;i<=6;i++){
 			  loginPage.getEleVersionTxt().click();
 		  }
 		  loginPage.getEleEnvironmentTxtFld().sendKeys("pulse");
